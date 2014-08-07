@@ -14,3 +14,5 @@ Style/LineLength:
 Style/RegexpLiteral:
   MaxSlashes: 0
 
+Style/SignalException:
+  Enabled: false

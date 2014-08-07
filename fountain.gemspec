@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.version       = Fountain::VERSION
   gem.summary       = 'A Database Building DSL for Docker'
   gem.description   = 'Fountain is a DSL and command line utility for building Docker images containing large amounts of test data.'
-  gem.license       = 'MIT'
+  gem.license       = 'Apache License, Version 2.0'
   gem.authors       = ['abishopric']
   gem.email         = 'fountain@anthonybishopric.com'
   gem.homepage      = 'https://rubygems.org/gems/fountain'

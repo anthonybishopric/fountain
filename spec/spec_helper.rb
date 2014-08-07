@@ -1,5 +1,3 @@
-gem 'rspec', '~> 2.4'
 require 'rspec'
 require 'fountain/version'
-
-include Fountain
+require 'fountain'

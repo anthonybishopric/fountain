@@ -6,7 +6,7 @@ Part of what makes [Docker](https://github.com/dotcloud/docker) so amazing is th
 # test/fountain/big_user_db.rb
 fountain do
 
-	image "postgres base", template: "zaiste/postgresql" do
+	image :postgres_base, from: "zaiste/postgresql" do
 
 		# We specify options just as we would in a Dockerfile. Options
 		# are inherited by sub-images.
@@ -14,7 +14,7 @@ fountain do
 		add "https://my.tld/pgsql/pg_hba.conf", "/etc/pgsql/pg_hba.conf"
 		cmd "postgres -D /usr/local/pgsql/data"
 
-		image "a million users" do
+		image :a_million_users do
 
 			1000000.times do
 				FactoryGirl.create(:user)
